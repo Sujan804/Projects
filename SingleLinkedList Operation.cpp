@@ -14,7 +14,7 @@ void insert(node *s, int data){
 }
 void display(node *s){
     while(s->next != NULL){
-        cout<<s->next->data<<endl<<endl;;
+        cout<<s->next->data<<endl;
         s = s->next;
     }
 }
@@ -71,6 +71,7 @@ int main(){
         break;
     case 4:
         display(first);
+        cout<<"endl";
         break;
     default:
         cout<<"Please Enter a right Number"<<endl;
